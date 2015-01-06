@@ -96,16 +96,16 @@
         </service>
         </config-file>
 
-	 <source-file src="lib/android/AlgorithmManager.jar" target-dir="libs"/>
-	 <source-file src="lib/android/SITMarkAudioAnnotationAlgoManWrapper-1.2.jar" target-dir="libs"/>
-	 <source-file src="lib/android/SITMarkJNIHelper-0.5.jar" target-dir="libs"/>
-	 <source-file src="lib/android/armeabi/libawt3-sdk.so" target-dir="libs/armeabi"/>
-	<source-file src="lib/android/armeabi/libSITMarkAudioAnnotation.so" target-dir="libs/armeabi/"/>
-	<source-file src="lib/android/armeabi-v7a/libawt3-sdk.so" target-dir="libs/armeabi-v7a"/>
-	<source-file src="lib/android/armeabi-v7a/libjingle_peerconnection_so.so" target-dir="libs/armeabi-v7a"/>
-	<source-file src="lib/android/armeabi-v7a/libSITMarkAudioAnnotation.so" target-dir="libs/armeabi-v7a"/>
-	<source-file src="lib/android/mips/libSITMarkAudioAnnotation.so" target-dir="libs/mips"/>
-	 <source-file src="lib/android/x86/libSITMarkAudioAnnotation.so" target-dir="libs/x86"/>
+	 <source-file src="lib/AlgorithmManager.jar" target-dir="libs"/>
+	 <source-file src="lib/SITMarkAudioAnnotationAlgoManWrapper-1.2.jar" target-dir="libs"/>
+	 <source-file src="lib/SITMarkJNIHelper-0.5.jar" target-dir="libs"/>
+	 <source-file src="lib/armeabi/libawt3-sdk.so" target-dir="libs/armeabi"/>
+	<source-file src="lib/armeabi/libSITMarkAudioAnnotation.so" target-dir="libs/armeabi/"/>
+	<source-file src="lib/armeabi-v7a/libawt3-sdk.so" target-dir="libs/armeabi-v7a"/>
+	<source-file src="lib/armeabi-v7a/libjingle_peerconnection_so.so" target-dir="libs/armeabi-v7a"/>
+	<source-file src="lib/armeabi-v7a/libSITMarkAudioAnnotation.so" target-dir="libs/armeabi-v7a"/>
+	<source-file src="lib/mips/libSITMarkAudioAnnotation.so" target-dir="libs/mips"/>
+	 <source-file src="lib/x86/libSITMarkAudioAnnotation.so" target-dir="libs/x86"/>
 
 	  </platform>
 
