@@ -1,4 +1,4 @@
-cordova.define("org.apache.cordova.ringtonepicker.notification", function(require, exports, module) { /*
+cordova.define("org.apache.cordova.wavemark.wavemark", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -34,7 +34,7 @@ module.exports = {
      */
      
     getRingtone: function(successCallback, errorCallback) {
-        exec(successCallback, errorCallback, "WavemarkPicker", "getWavemark", []);
+        exec(successCallback, errorCallback, "RingtonePicker", "getRingtone", []);
     },
 };
 

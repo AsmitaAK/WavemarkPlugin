@@ -1,23 +1,23 @@
 	<?xml version="1.0" encoding="UTF-8"?>
 	<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 			xmlns:android="http://schemas.android.com/apk/res/android"
-			id="com.sanda.plugins.WatermarkDetector"
+			id="org.apache.cordova.wavemark"
 			version="0.0.5">
 
-	  <name>WatermarkDetector</name>
+	  <name>WatermarkPicker</name>
 
 	  <description>
-		WatermarkDetectorApp Plugin 
+		WatermarkPicker Plugin 
 	  </description>
 
-	  <license>Sanda</license>
+	  <license>ASMITA</license>
 
 	  <engines>
 		<engine name="cordova" version=">=3.0.0"/>
 	  </engines>
 
-	  <js-module src="www/WatermarkDetector.js" name="WatermarkDetector">
-		<clobbers target="window.plugins.WatermarkDetector" />
+	  <js-module src="www/wavemark.js" name="wavemark">
+		<clobbers target="window.plugins.wavemark" />
 	  </js-module>
 
 	 
@@ -25,23 +25,54 @@
 	  <platform name="android">
 
 		<config-file target="res/xml/config.xml" parent="/*">
-		  <feature name="WatermarkDetector">
-			<param name="android-package" value="com.sanda.plugins.WatermarkDetector.WatermarkDetector" />
+		  <feature name="WavemarcPicker">
+			<param name="android-package" value="org.apache.cordova.wavemark.WavemarcPicker" />
 		  </feature>
 		</config-file>
 
-		<source-file src="src/android/com/sanda/plugins/WatermarkDetector/WatermarkDetector.java" target-dir="src/com/sanda/plugins/WatermarkDetector"/>
-		 <source-file src="src/android/com/sanda/plugins/WatermarkDetector/WatermarkDetectorApp.java" target-dir="src/com/sanda/plugins/WatermarkDetector"/>
-		 <source-file src="src/android/com/sanda/plugins/WatermarkDetector/WatermarkObject.java" target-dir="src/com/sanda/plugins/WatermarkDetector"/>
+		<source-file src="src/android/org/apache/cordova/wavemark/WavemarcPicker.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/WatermarkDetectorApp.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/WatermarkHelper.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/WatermarkAdapter.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/UtilFunctions.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/ResponseModal.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/Media_Util.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/ImageService.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/GPSDemo.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/DummyActivity.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/DatabaseHandler.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/CustomMultiPartEntity.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/Constants.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 
 		 <config-file target="AndroidManifest.xml" parent="/manifest">
 				
-				 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-				 <uses-permission android:name="android.permission.RECORD_AUDIO" />
+				 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.yourwellness.ngage.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.yourwellness.ngage.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
 			</config-file>
 
 			<config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity
-                    android:name="com.sanda.plugins.WatermarkDetector.WatermarkDetectorApp"
+                    android:name="org.apache.cordova.wavemark.WavemarcPicker"
                     android:finishOnTaskLaunch="true"
                     android:launchMode="singleInstance"
                     android:noHistory="true"
@@ -51,7 +82,16 @@
                 </intent-filter>
                
             </activity>
-			<service  android:name="com.sanda.plugins.WatermarkDetector.WatermarkDetectorApp" >
+			<activity
+                    android:name="org.apache.cordova.wavemark.DummyActivity">
+			</activity>
+			<activity
+                    android:name="org.apache.cordova.wavemark.GPSDemo">
+			</activity>
+			<activity
+                    android:name="org.apache.cordova.wavemark.WatermarkDetectorApp">
+			</activity>
+			<service  android:name="org.apache.cordova.wavemark.ImageService" >
             
         </service>
         </config-file>
