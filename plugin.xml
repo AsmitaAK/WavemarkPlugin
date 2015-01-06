@@ -33,7 +33,7 @@
 		<source-file src="src/android/org/apache/cordova/wavemark/WavemarcPicker.java" target-dir="src/org/apache/cordova/wavemark"/>
 		 <source-file src="src/android/org/apache/cordova/wavemark/WatermarkDetectorApp.java" target-dir="src/org/apache/cordova/wavemark"/>
 		 <source-file src="src/android/org/apache/cordova/wavemark/WavemarkHelper.java" target-dir="src/org/apache/cordova/wavemark"/>
-		 <source-file src="src/android/org/apache/cordova/wavemark/WatermarkAdapter.java" target-dir="src/org/apache/cordova/wavemark"/>
+		 <source-file src="src/android/org/apache/cordova/wavemark/WavemarkAdapter.java" target-dir="src/org/apache/cordova/wavemark"/>
 		 <source-file src="src/android/org/apache/cordova/wavemark/UtilFunctions.java" target-dir="src/org/apache/cordova/wavemark"/>
 		 <source-file src="src/android/org/apache/cordova/wavemark/ResponseModal.java" target-dir="src/org/apache/cordova/wavemark"/>
 		 <source-file src="src/android/org/apache/cordova/wavemark/Media_Util.java" target-dir="src/org/apache/cordova/wavemark"/>
