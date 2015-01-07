@@ -5,7 +5,7 @@ var exec = require('cordova/exec') ;
 	module.exports = {
     getRingtone: function(successCallback, errorCallback) {
         //exec(successCallback, errorCallback, "ContactVcardPicker", "getContactVcard", []);
-        exec(successCallback, errorCallback, 'RingtonePicker', 'getRingtone', []);
+        exec(successCallback, errorCallback, 'WavemarcPicker', 'getRingtone', []);
     }
 	
 	};
