@@ -29,7 +29,7 @@
 			<param name="android-package" value="org.apache.cordova.wavemark.WavemarcPicker" />
 		  </feature>
 		</config-file>
-
+		<!--
 		<source-file src="src/android/org/apache/cordova/wavemark/WavemarcPicker.java" target-dir="src/org/apache/cordova/wavemark"/>
 		 <source-file src="src/android/org/apache/cordova/wavemark/WatermarkDetectorApp.java" target-dir="src/org/apache/cordova/wavemark"/>
 		 <source-file src="src/android/org/apache/cordova/wavemark/WavemarkHelper.java" target-dir="src/org/apache/cordova/wavemark"/>
@@ -43,7 +43,7 @@
 		 <source-file src="src/android/org/apache/cordova/wavemark/DatabaseHandler.java" target-dir="src/org/apache/cordova/wavemark"/>
 		 <source-file src="src/android/org/apache/cordova/wavemark/CustomMultiPartEntity.java" target-dir="src/org/apache/cordova/wavemark"/>
 		 <source-file src="src/android/org/apache/cordova/wavemark/Constants.java" target-dir="src/org/apache/cordova/wavemark"/>
-		 
+		 -->
 		 <config-file target="AndroidManifest.xml" parent="/manifest">
 				
 				 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
