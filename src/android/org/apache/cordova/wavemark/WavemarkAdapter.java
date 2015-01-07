@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 import com.squareup.picasso.Picasso;
-import com.yourwellness.ngage.R;
+import com.w.w.R;
 
 import android.content.Context;
 import android.content.Intent;

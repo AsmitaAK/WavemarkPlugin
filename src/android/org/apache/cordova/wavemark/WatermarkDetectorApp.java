@@ -57,7 +57,7 @@ import android.widget.Toast;
 import com.dlazaro66.qrcodereaderview.QRCodeReaderView;
 import com.dlazaro66.qrcodereaderview.QRCodeReaderView.OnQRCodeReadListener;
 import com.google.zxing.client.android.camera.open.CameraManager;
-import com.yourwellness.ngage.R;
+import com.w.w.R;
 
 import de.fraunhofer.sit.watermarking.algorithmmanager.AlgorithmParameter;
 import de.fraunhofer.sit.watermarking.algorithmmanager.WatermarkMessage;
